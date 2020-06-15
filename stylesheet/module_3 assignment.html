@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<style type="text/css">
-		body {
-			font-size: 16px;
-			color: #fff;
-			background-color: #61122f;
-			font-family: Oxygen;
-		}
-	</style>
-</head>
-<body>
-<p>Hello World</p>
-</body>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MENU</title>
+  </head>
+  <body>
+    <header> 
+      <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+            <div class="navbar-brand">
+             <a href="module_3 assignment.html"><h1>Food,LLC</h1></a>
+            </div>
+            <button onclick="button()" class="navbar-toggle collapsed" data-toggle="collapsed">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+            </button>
+          
+          <div id="collapsable-nav" class="collapse navbar-collapse" >
+            <li class="nav navbar-nav visible-xs">
+              <a href="#Chicken">Chicken</a>
+              <a href="#Beef">Beef</a>
+              <a href="#Sushi">Sushi</a></li>
+          </div>
+       </div>
+      </nav>
+    </header>  
+    <h1>Our Menu</h1>
+     <div id="row">
+         <p class="text-center" id="chi">Chicken</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpaqui officia deserunt mollit anim id est laborum.
+      </div>
+      <div id="row">
+          <p class="text-center" id="beef">Beef</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div id="row">
+          <p class="text-center" id="sushi">Sushi</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  <script>
+    function button() {
+      document.getElementById("collapsable-nav").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('.navbar-toggle')) {
+        var dropdowns = document.getElementByClassName("nav-collapse");
+        var i;
+        for(i=0;i<dropdowns.length;i++) {
+          var openDropdowns = dropdowns[i];
+          if (openDropdowns.classList.contains('show')) {
+            openDropdowns.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script> 
+  </body>
 </html>

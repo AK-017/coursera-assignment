@@ -1,0 +1,122 @@
+
+*{
+    box-sizing:content-box;
+	padding: 0;
+	margin: 0;
+}
+#row {
+    background-color: grey;
+    border: 2px solid black ;
+    margin :45px;
+    float:left;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding:0px 0px 10px 10px;
+}
+h1 {text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#chi{
+	font-weight: bold;
+}
+#beef{
+	font-weight: bold;
+}
+#sushi{
+	font-weight: bold;
+}
+body {
+	background-color: #fff;
+	color:#000000; 
+	font-size: 16px;
+}
+nav {
+	max-height: 85px;
+}
+#header-nav {
+	background-color: #D3D3D3;
+	background-radius :0;
+	border:0;
+}
+navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { 
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1px;
+ }
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-toggle {
+	position: relative;
+	background-image: none;
+	border-radius: 4px;
+	padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+}
+.navbar-toggle:focus {
+	outline: 0;
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #951C49;
+	text-align: center;
+}
+
+.show {display: block;}
+.navbar-nav  a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  float: none;
+}
+.navbar-nav{
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin:30px;
+}
+.navbar-nav a:hover {background-color: #ddd;}
+.navbar-collapse:hover .navbar-nav{
+  display: block;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 18px;
+  height: 1.8px;
+  border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media(max-width: 767px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+}
+@media (max-width: 479px) {
+  .navbar-brand h1 { 
+    padding-top: 5px;
+    font-size: 6vw;
+  }
